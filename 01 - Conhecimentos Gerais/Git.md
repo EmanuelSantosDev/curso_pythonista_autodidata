@@ -75,6 +75,7 @@ git push
 Exibe o histórico de commits.
 ```bash
 git log
+git log --oneline
 ```
 
 
