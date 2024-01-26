@@ -8,8 +8,9 @@ caminho_arquivo_4 = '06 - Arquivos JSON\\usuarios4.json'
 caminho_arquivo_5 = '06 - Arquivos JSON\\usuarios5.json'
 
 
+# json.load() é um método que é usado para carregar dados de um arquivo JSON
 with open(caminho_arquivo_1, encoding='utf-8') as arquivo_json:
-    dados = json.load(arquivo_json)  # convertendo arquivo JSON para Dicionário
+    dados = json.load(arquivo_json)
     print(dados['nome'])  # Carol
 
 
