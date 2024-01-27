@@ -1,11 +1,11 @@
 import json
 
 
-caminho_arquivo_1 = '06 - Arquivos JSON\\usuarios1.json'
-caminho_arquivo_2 = '06 - Arquivos JSON\\usuarios2.json'
-caminho_arquivo_3 = '06 - Arquivos JSON\\usuarios3.json'
-caminho_arquivo_4 = '06 - Arquivos JSON\\usuarios4.json'
-caminho_arquivo_5 = '06 - Arquivos JSON\\usuarios5.json'
+caminho_arquivo_1 = '06 - Manipulação de Arquivos\\usuarios1.json'
+caminho_arquivo_2 = '06 - Manipulação de Arquivos\\usuarios2.json'
+caminho_arquivo_3 = '06 - Manipulação de Arquivos\\usuarios3.json'
+caminho_arquivo_4 = '06 - Manipulação de Arquivos\\usuarios4.json'
+caminho_arquivo_5 = '06 - Manipulação de Arquivos\\usuarios5.json'
 
 
 # json.load() é um método que é usado para carregar dados de um arquivo JSON
