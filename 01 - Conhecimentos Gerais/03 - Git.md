@@ -54,6 +54,32 @@ git status
 ```
 
 
+## Desfazendo Coisas
+
+
+Descarta as alterações não confirmadas em um arquivo específico e restaura o estado para o que foi registrado no último commit:
+```bash
+git checkout <nome_arquivo>
+```
+
+
+Retira o arquivo do Staging:
+```bash
+git restore --staged <nome_arquivo>
+```
+
+
+
+```bash
+```
+
+```bash
+```
+
+```bash
+```
+
+
 ## Atualização e Publicação
 
 
