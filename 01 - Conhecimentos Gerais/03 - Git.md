@@ -4,14 +4,14 @@
 ## Configuração Inicial
 
 
-Configuração do Git, como nome de usuário, e-mail, etc.
+Configuração do Git, como nome de usuário, e-mail, etc:
 ```bash
 git config --global user.name "Seu Nome"
 git config --global user.email "seu@email.com"
 ```
 
 
-Visualizando as configurações.
+Visualizando as configurações:
 ```bash
 git config --global --list
 ```
@@ -20,13 +20,13 @@ git config --global --list
 ## Inicialização e Clonagem
 
 
-Inicializa um novo repositório Git.
+Inicializa um novo repositório Git:
 ```bash
 git init
 ```
 
 
-Clona um repositório existente.
+Clona um repositório existente:
 ```bash
 git clone <url_do_repositorio>
 ```
@@ -35,20 +35,20 @@ git clone <url_do_repositorio>
 ## Básicos do Dia a Dia
 
 
-Adiciona mudanças ao índice (staging area).
+Adiciona mudanças ao índice (staging area):
 ```bash
 git add <arquivo>
 git add .
 ```
 
 
-Registra as mudanças no repositório.
+Registra as mudanças no repositório:
 ```bash
 git commit -m "Mensagem do commit"
 ```
 
 
-Exibe o status das mudanças como untracked, modified, etc.
+Exibe o status das mudanças como untracked, modified, etc:
 ```bash
 git status
 ```
@@ -69,27 +69,34 @@ git restore --staged <nome_arquivo>
 ```
 
 
-
+Elimina o commit retornando o arquivo para o Staging:
 ```bash
+git reset --soft <hash_do_commit_anterior>
 ```
 
+
+Elimina o commit e retorna o arquivo para antes do Staging (modified):
 ```bash
+git reset --mixed <hash_do_commit_anterior>
 ```
 
+
+Elimina o commit e tudo o que foi feito nele, inclusive as alterações nos arquivos:
 ```bash
+git reset --hard <hash_do_commit_anterior>
 ```
 
 
 ## Atualização e Publicação
 
 
-Atualiza o repositório local com as mudanças do repositório remoto.
+Atualiza o repositório local com as mudanças do repositório remoto:
 ```bash
 git pull
 ```
 
 
-Envia mudanças locais para o repositório remoto.
+Envia mudanças locais para o repositório remoto:
 ```bash
 git push
 ```
@@ -98,14 +105,14 @@ git push
 ## Logs e Histórico
 
 
-Exibe o histórico de commits.
+Exibe o histórico de commits:
 ```bash
 git log
 git log --oneline
 ```
 
 
-Exibe as diferenças entre commits, branches, etc.
+Exibe as diferenças entre commits, branches, etc:
 ```bash
 git diff
 ```
