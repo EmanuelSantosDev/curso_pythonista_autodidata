@@ -35,7 +35,7 @@ git clone <url_do_repositorio>
 ## Básicos do Dia a Dia
 
 
-Adiciona mudanças ao índice (staging area):
+Adiciona mudanças à área de staging:
 ```bash
 git add <arquivo>
 git add .
