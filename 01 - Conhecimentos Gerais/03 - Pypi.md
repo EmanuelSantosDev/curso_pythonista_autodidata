@@ -17,7 +17,8 @@
   - Ajuda os desenvolvedores a construir e expandir suas aplicações de forma rápida e eficiente.
 
 - **Centralização**
-  - Fornecer um repositório centralizado de pacotes simplifica o processo de descoberta e uso de software Python.
+  - Fornece um repositório centralizado de pacotes que simplifica o processo de descoberta e uso de software Python.
 
 - **Essencial**
   - O PyPI é uma parte essencial do ecossistema Python, facilitando o compartilhamento e a colaboração entre desenvolvedores.
+  

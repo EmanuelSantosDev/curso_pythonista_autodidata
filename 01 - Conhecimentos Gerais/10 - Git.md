@@ -4,7 +4,6 @@
 ## Configuração Inicial
 
 
-Configuração do Git, como nome de usuário, e-mail, etc:
 ```bash
 git config --global user.name "Seu Nome"
 git config --global user.email "seu@email.com"
@@ -35,14 +34,14 @@ git clone <url_do_repositorio>
 ## Básicos do Dia a Dia
 
 
-Adiciona mudanças à área de staging:
+Adiciona alterações dos arquivos à área de staging:
 ```bash
 git add <arquivo>
 git add .
 ```
 
 
-Registra as mudanças no repositório:
+Confirma as mudanças no repositório local:
 ```bash
 git commit -m "Mensagem do commit"
 ```
@@ -90,15 +89,15 @@ git reset --hard <hash_do_commit_anterior>
 ## Atualização e Publicação
 
 
-Atualiza o repositório local com as mudanças do repositório remoto:
-```bash
-git pull
-```
-
-
 Envia mudanças locais para o repositório remoto:
 ```bash
 git push
+```
+
+
+Atualiza o repositório local com as mudanças do repositório remoto:
+```bash
+git pull
 ```
 
 

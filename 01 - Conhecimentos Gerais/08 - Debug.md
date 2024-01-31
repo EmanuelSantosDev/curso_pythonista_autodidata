@@ -11,4 +11,4 @@
 
 
 - Ao pousar o mouse sobre as variáveis é possivel ver o seu valor em tempo real.
-- Quando estiver em "_modo de depuração_" é possivel acessar o *_consolde de depuração_* e digitar uma variável para verificar o seu valor no momento atual.
+- Quando estiver em _modo de depuração_ é possivel acessar o *_consolde de depuração_* e digitar o nome de uma variável para verificar o seu valor no momento atual.
