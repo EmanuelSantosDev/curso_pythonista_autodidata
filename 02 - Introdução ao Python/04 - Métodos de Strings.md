@@ -1,6 +1,7 @@
-# <<< Métodos de Strings >>>
+# Métodos de Strings
 
 
+```python
 nome_curso = 'Pythonista Autodidata'
 frase = '   Frase com Recuos    '
 
@@ -28,3 +29,4 @@ print(nome_curso.replace('Pythonista', 'Javista'))
 
 print('Emanuel Joaquim dos Santos'.replace('Joaquim', 'Olivio'))
 # Emanuel Olivio dos Santos
+```

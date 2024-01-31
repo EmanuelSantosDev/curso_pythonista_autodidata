@@ -1,6 +1,7 @@
-# <<< Slice (extraindo partes de um string) >>>
+# Slice (Extraindo Partes de uma String
 
 
+```python
 equipamento = 'Teclado Ergonômico'
 
 
@@ -31,3 +32,4 @@ print(link[:-5])  # facebook.com/emanuels
 
 frase = 'Clean Code'
 print(frase.rindex('C'))  # 6
+```
