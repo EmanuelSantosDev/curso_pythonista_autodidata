@@ -1,7 +1,9 @@
 # Datetime
 
 
+```python
 from datetime import datetime
+
 
 print(datetime.now())  # 2024-01-22 23:13:33.675344
 print(datetime.now().day)  # 22
@@ -31,3 +33,4 @@ print(data_nasc)  # 1986-06-02 00:00:00
 
 intervalo = datetime.now() - data_nasc
 print(intervalo.days)  # 13748
+```

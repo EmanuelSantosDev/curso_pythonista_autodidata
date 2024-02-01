@@ -1,3 +1,7 @@
+# Input
+
+
+```python
 # Recebendo Dados do Usuário
 
 
@@ -11,3 +15,4 @@ print(type(senha))  # <class 'str'>
 idade = int(input('Quantos anos você tem? '))  # 37
 print(idade)  # 37
 print(type(idade))  # <class 'int'>
+```

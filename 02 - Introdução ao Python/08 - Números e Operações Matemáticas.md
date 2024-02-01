@@ -1,7 +1,8 @@
+# Números e Operações Matemáticas
+
+
+```python
 # Tipos de Números
-
-
-import math
 
 
 a = 20
@@ -34,10 +35,22 @@ b = b - 2
 b -= 2
 
 
-# Operações Matemáticas Comuns
+# Operações de Arredondamento
 
 
+import math
+
+
+# Arredondamento para um número inteiro mais próximo:
 print(round(5.7))  # 6
+print(round(5.4))  # 5
 
-# importamos o módulo 'math' no início do código
+# Arredondamento para um número específico de casas decimais:
+print(round(3.14159, 2))  # 3.14
+
+# Arredondando para cima
 print(math.ceil(2.2))  # 3
+
+# Arredondando para baixo
+print(math.floor(2.9))  # 2
+```
