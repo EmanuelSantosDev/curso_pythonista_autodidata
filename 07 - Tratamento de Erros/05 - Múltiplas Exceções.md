@@ -1,6 +1,7 @@
 # Múltiplas Exceções
 
 
+```python
 try:
     divisor = int(input('Digite um Divisor: '))
     print(10 / divisor)
@@ -10,3 +11,4 @@ except ValueError as erro:
     print('Digite um número válido')
 finally:
     print('Programa Encerrado')
+```

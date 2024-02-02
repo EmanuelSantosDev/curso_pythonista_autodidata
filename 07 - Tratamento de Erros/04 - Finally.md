@@ -1,6 +1,7 @@
 # Finally
 
 
+```python
 internet = None
 
 
@@ -16,3 +17,4 @@ finally:
 Não há conexão com a internet
 Desfazendo a compra
 '''
+```
