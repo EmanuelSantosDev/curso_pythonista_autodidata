@@ -1,7 +1,8 @@
 # Args
 
 
-# '*args' é uma tupla
+``*args`` é uma tupla:
+```python
 def somar(*valores, b):
     print(valores)  # (10, 3, 4, 3)
     for valor in valores:
@@ -10,3 +11,4 @@ def somar(*valores, b):
 
 
 somar(10, 3, 4, 3, b=10)
+```

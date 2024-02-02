@@ -1,13 +1,10 @@
-# Kwargs
+# Kwargs (keyword arguments)
 
 
-# '**kwargs' (keyword arguments)
-
-
-# '**kwargs' é um dicionário
+``**kwargs`` é um dicionário:
+```python
 def concatenar(**palavras):
-    print(palavras)
-    # {'a': 'Nós', 'b': 'Somos', 'c': 'Pythonistas', 'd': 'Profissionais'}
+    print(palavras) # {'a': 'Nós', 'b': 'Somos', 'c': 'Pythonistas', 'd': 'Profissionais'}
     frase = ''
     for palavra in palavras.values():
         frase += palavra + ' '
@@ -16,3 +13,4 @@ def concatenar(**palavras):
 
 concatenar(a='Nós', b='Somos', c='Pythonistas', d='Profissionais')
 # Nós Somos Pythonistas Profissionais
+```

@@ -1,6 +1,7 @@
-# Comum + Args + Kwargs
+# Argumento Comum + Args + Kwargs
 
 
+```python
 def fazer_calculo(nome, *args, **kwargs):
     print(nome)  # Emanuel
     print(args)  # (1, 2, 3, 4)
@@ -12,3 +13,4 @@ def fazer_calculo(nome, *args, **kwargs):
 
 
 fazer_calculo('Emanuel', 1, 2, 3, 4, a=11, b=12, c=13, d=14)
+```
