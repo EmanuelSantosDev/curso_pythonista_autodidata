@@ -1,4 +1,8 @@
-# Loop Whyle
+# Loop whyle
+
+
+```python
+# Exemplo 1
 
 
 contador = 0
@@ -42,19 +46,6 @@ print(f'Bem-vindo {nome}!')
 contador = 10
 
 while contador >= 0:
-    print(contador)
+    print(contador) # 10 9 8 7 6 5 4 3 2 1 0
     contador -= 1
-
-'''
-10
-9
-8
-7
-6
-5
-4
-3
-2
-1
-0
-'''
+```

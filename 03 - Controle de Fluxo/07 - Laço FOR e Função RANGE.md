@@ -1,6 +1,7 @@
-# Loop 'for'
+# Laço for e Função range()
 
 
+```python
 # range() é uma função geradora
 for numero in range(5):
     print(f'carregando #{numero}')
@@ -57,3 +58,4 @@ Clube: City
 Clube: Liverpool
 Clube: Arsenal
 '''
+```

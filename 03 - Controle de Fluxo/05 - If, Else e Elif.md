@@ -1,24 +1,29 @@
 # IF
 
 
+```python
 trabalho_terminado = False
 
 if trabalho_terminado:
     print('Bora dar uma saida!')
+```
 
 
 # ELSE
 
 
+```python
 if trabalho_terminado:
     print('Bora dar uma saida!')
 else:
     print('Não posso sair agora.')
+```
 
 
 # ELIF
 
 
+```python
 numero_atrasos = 2
 
 if numero_atrasos >= 3:
@@ -29,11 +34,13 @@ elif numero_atrasos == 1:
     print('Essa é sua primeira falta')
 else:
     print('Pode entrar')
+```
 
 
 # Chaining
 
 
+```python
 velocidade = 76
 
 if velocidade <= 50:
@@ -44,3 +51,4 @@ elif 61 <= velocidade <= 75:
     print('Levou multa de 3 pontos')
 else:
     print('Levou multa de 7 pontos')
+```

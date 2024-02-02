@@ -1,6 +1,7 @@
 # Loops Aninhados
 
 
+```python
 paises = ['Brasil', 'Argentina', 'Inglaterra', 'Itália', 'Alemanha', 'França']
 estacoes = ['Verão', 'Outono', 'Inverno', 'Primavera']
 
@@ -76,3 +77,4 @@ x: 5, y: 23
 x: 5, y: 24
 x: 5, y: 25
 '''
+```
