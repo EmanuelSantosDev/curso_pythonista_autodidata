@@ -1,6 +1,7 @@
 # Ordenando Coleções Através de Propriedades
 
 
+```python
 # importando a função 'itemgetter'
 from operator import itemgetter
 
@@ -43,11 +44,18 @@ produtos = [
     ('Microfone', 550)
 ]
 produtos.sort(key=itemgetter(1))
-print(produtos)  # [('Microfone', 550), ('Celular', 750), ('Bicicleta', 1500)]
+print(produtos)  
+# [('Microfone', 550), 
+# ('Celular', 750), 
+# ('Bicicleta', 1500)]
 produtos.sort(key=itemgetter(0))
-print(produtos)  # [('Bicicleta', 1500), ('Celular', 750), ('Microfone', 550)]
+print(produtos)  
+# [('Bicicleta', 1500), 
+# ('Celular', 750), 
+# ('Microfone', 550)]
 
 
-# Ordenando em Ordem DECRESCENTE
+# Ordem DECRESCENTE
 produtos.sort(key=itemgetter(0), reverse=True)
 print(produtos)  # [('Microfone', 550), ('Celular', 750), ('Bicicleta', 1500)]
+```

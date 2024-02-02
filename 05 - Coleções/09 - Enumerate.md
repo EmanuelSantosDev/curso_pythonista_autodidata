@@ -1,18 +1,20 @@
 # Enumerate
 
 
-'''
-É utilizada para iterar sobre uma sequência, enquanto acompanha 
-o índice de cada elemento. 
+- É uma função embutida do Python utilizada para iterar sobre uma sequência, enquanto acompanha  o índice de cada elemento. 
+- É possível configurar o valor inicial do índice.
 
-É possível configurar o valor inicial do índice.
 
-Sintaxe:
+
+
+```python
+# Sintaxe Básica:
 enumerate(iteravel, start=0)
-'''
 
 
 # Enumerate sobre uma Lista
+
+
 frutas = ['Maça', 'Banana', 'Melão', 'Morango']
 for indice, fruta in enumerate(frutas):
     print(f'{indice} - {fruta}')
@@ -22,7 +24,9 @@ for indice, fruta in enumerate(frutas):
     # 3 - Morango
 
 
-# Enumerate sobre um Range com índice 1000
+# Enumerate com índice inicial de nº 1000
+
+
 for i, n in enumerate(range(30, 50, 3), 1000):
     print(f'{i} - {n}')
     # 1000 - 30
@@ -32,3 +36,4 @@ for i, n in enumerate(range(30, 50, 3), 1000):
     # 1004 - 42
     # 1005 - 45
     # 1006 - 48
+```

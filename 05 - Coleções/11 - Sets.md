@@ -1,13 +1,12 @@
 # Sets
 
 
-'''
-Um conjunto (set) é uma coleção não ordenada e mutável de elementos únicos. 
-Os conjuntos são utilizados quando a ordem dos elementos não é importante.
-A principal característica é que eles não permitem elementos duplicados.
-'''
+- Um conjunto (**set**) é uma coleção não ordenada e mutável de elementos únicos. 
+- Os conjuntos são utilizados quando a ordem dos elementos não é importante.
+- A principal característica é que eles não permitem elementos duplicados.
 
 
+```python
 frutas = {'maçã', 'uva', 'banana', 'maçã', 'morango', 'banana', 'maçã'}
 
 
@@ -29,3 +28,4 @@ b = set(numeros2)
 print(a.symmetric_difference(b))  # {3, 5, 8, 9}
 print(a.intersection(b))  # {2}
 print(a.union(b))  # {2, 3, 5, 8, 9}
+```

@@ -1,17 +1,11 @@
-# Múltiplas Listas com Zip
+# Combinando Pares de Listas com a função zip
 
 
-'''
-A função zip() é utilizada para combinar elementos 
-de iteráveis (como listas, tuplas, etc.) em pares ordenados.
-
-Ela retorna um objeto zip, que é um iterador de tuplas.
-'''
+- A função ``zip()`` é utilizada para combinar elementos de iteráveis (como listas, tuplas, etc.) em pares ordenados.
+- Ela retorna um objeto zip, que é um iterador de tuplas.
 
 
-from itertools import zip_longest
-
-
+```python
 lista_a = ['A', 'B', 'C', 'D', 'E']
 lista_b = [1, 2, 3, 4, 6]
 
@@ -25,17 +19,23 @@ C: 3
 D: 4
 E: 6
 '''
+```
 
 
-# Operando sobre Listas de tamanhos diferentes
-# importamos a classe 'zip_longest' do módulo 'itertools'
-# assim garantimos que será interado sobre a lista completa
+# Combinando Listas de Tamanhos Diferentes com a função zip_longest
+
+
+```python
+from itertools import zip_longest
 
 
 titulos = ['Titulo 1', 'Titulo 2', 'Titulo 3', 'Titulo 4']
 descricoes = ['Descricao 1', 'Descricao 2', 'Descricao 3']
 
-# sem zip_longest
+
+# com zip()
+
+
 for a, b in zip(titulos, descricoes):
     print(f'{a}: {b}')
 '''
@@ -44,7 +44,10 @@ Titulo 2: Descricao 2
 Titulo 3: Descricao 3
 '''
 
-# com zip_longest
+
+# com zip_longest()
+
+
 for a, b in zip_longest(titulos, descricoes):
     print(f'{a}: {b}')
 '''
@@ -53,3 +56,4 @@ Titulo 2: Descricao 2
 Titulo 3: Descricao 3
 Titulo 4: None
 '''
+```

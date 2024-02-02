@@ -1,6 +1,7 @@
-# Encontrando e Manipulando Itens da Lista
+# Manipulando Listas
 
 
+```python
 valores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 anos = [2020, 2030, 2040, 2020]
 
@@ -40,11 +41,10 @@ anos.remove(2020)
 print(anos)  # [2030, 2031, 2020]
 
 
-# removendo com base no índice SEM RETORNAR O VALOR
-# gera um 'IndexError' (exceção)
-# 'del': É uma declaração do Python e não uma função.
-# Pode ser usado para remover elementos de diferentes tipos de objetos,
-# não apenas listas.
+# removendo com base no índice SEM RETORNAR O VALOR.
+# 'del' é uma declaração do Python e não uma função.
+# Pode ser usado para remover elementos de diferentes 
+# tipos de objetos, não apenas listas.
 del anos[1]
 print(anos)  # [2030, 2020]
 
@@ -57,10 +57,11 @@ print(valores)
 # [1, 2, 2020, 2030, 2031, 2040, 2020]
 
 
-# contando a ocorrência de valores
+# contando a recorrência de valores
 print(valores.count(2020))  # 2
 
 
 # resetando uma lista
 valores.clear()
 print(valores)  # []
+```

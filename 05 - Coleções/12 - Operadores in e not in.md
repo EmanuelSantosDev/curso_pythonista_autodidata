@@ -1,10 +1,11 @@
-# in \ not in
+# Operadores in e not in
 
 
-# São operadores de pertencimento que verificam se um valor está presente em uma
-# sequência (como uma lista, tupla, conjunto ou string) ou não.
+São operadores de pertencimento que verificam se um valor está presente em uma
+sequência (como uma lista, tupla, conjunto ou string) ou não.
 
 
+```python
 # EXEMPLO 1: verificando se um elemento está presente em uma lista
 
 
@@ -33,3 +34,4 @@ print("Java" not in texto)  # Saída: True
 
 # Verifica se a substring "sql" está presente no texto
 print("sql" in texto)  # Saída: False
+```

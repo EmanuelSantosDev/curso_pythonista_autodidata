@@ -1,6 +1,7 @@
 # Range (Geradores)
 
 
+```python
 # range() é uma função geradora
 for numero in range(5):
     print(f'carregando #{numero}')
@@ -42,3 +43,4 @@ minha_lista = list(range(0, 201, 10))
 print(minha_lista)
 # [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100,
 # 110, 120, 130, 140, 150, 160, 170, 180, 190, 200]
+```

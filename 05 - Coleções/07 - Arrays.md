@@ -1,11 +1,12 @@
 # Arrays
 
 
-# armazena elementos de um tipo de dado específico
-# foram criadas bibliotecas específicas para trabalhar com listas
-# arrays normalmente serão encontrados em programas legados
+- armazena elementos de um tipo de dado específico.
+- atualmente foram criadas bibliotecas específicas para trabalhar com listas.
+- arrays normalmente serão encontrados em programas legados.
 
 
+```python
 from array import array
 
 
@@ -26,3 +27,4 @@ print(numeros)  # array('i', [1, 3, 4, 200, 6, 10])
 
 del numeros[1]
 print(numeros)  # array('i', [1, 4, 200, 6, 10])
+```

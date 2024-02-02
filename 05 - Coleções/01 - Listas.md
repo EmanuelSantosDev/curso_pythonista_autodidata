@@ -1,6 +1,7 @@
 # Listas
 
 
+```python
 precos = [10, 20, 30, 40, 50, 60, 100, 250, 230, 560, 23, 74]
 print(precos[1])  # 20
 
@@ -35,3 +36,4 @@ print(frase)  # ['W', 'e', 'l', 'c', 'o', 'm', 'e']
 # Matriz
 cadastros = [['Emanuel', 37], ['Yasmin', 32], ['Paulo', 27]]
 print(cadastros[2][1])  # 27
+```

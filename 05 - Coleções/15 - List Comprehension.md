@@ -1,14 +1,11 @@
-'''
-LIST COMPREHENSION
-==================
+# List Comprehension
 
 
-* List comprehension é uma forma concisa e elegante de criar listas em Python. 
-* Ele permite criar uma lista a partir de qualquer tipo de iterável (como listas, 
-tuplas, conjuntos, etc.) aplicando uma expressão a cada item do iterável.
-'''
+- **List Comprehension** é uma forma concisa e elegante de criar listas em Python. 
+- Ela permite criar uma lista a partir de qualquer tipo de iterável (como listas, tuplas, conjuntos, etc.) aplicando uma expressão a cada item do iterável.
 
 
+```python
 # [expressão for item in iterável]
 dobros = [x * 2 for x in range(1, 6)]
 print(dobros)  # [2, 4, 6, 8, 10]
@@ -18,23 +15,32 @@ print(dobros)  # [2, 4, 6, 8, 10]
 nomes = ['César', 'Emanuel', 'Luana', 'Tatiana']
 nome_com_sobrenome = [nome + ' dos Santos' for nome in nomes]
 print(nome_com_sobrenome)
-# ['César dos Santos', 'Emanuel dos Santos', 'Luana dos Santos', 'Tatiana dos Santos']
+# ['César dos Santos', 
+# 'Emanuel dos Santos', 
+# 'Luana dos Santos', 
+# 'Tatiana dos Santos']
 
 
 # [função(item) for item in iterável]
 def sobrenome_almeida(nome):
     return nome + ' de Almeida'
 
-
 nome_com_sobrenome = [sobrenome_almeida(nome) for nome in nomes]
 print(nome_com_sobrenome)
-# ['César de Almeida', 'Emanuel de Almeida', 'Luana de Almeida', 'Tatiana de Almeida']
+# ['César de Almeida', 
+# 'Emanuel de Almeida', 
+# 'Luana de Almeida', 
+# 'Tatiana de Almeida']
 
 
-# [[i for i in range] for x in range] => MATRIZ
+# [[i for i in iterável] for x in iterável] => MATRIZ
 matriz = [[i for i in range(1, 6)] for x in range(5)]
 print(matriz)
-# [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5]]
+# [[1, 2, 3, 4, 5], 
+# [1, 2, 3, 4, 5], 
+# [1, 2, 3, 4, 5], 
+# [1, 2, 3, 4, 5], 
+# [1, 2, 3, 4, 5]]
 
 
 # [expressao for membro in iterável (condicional if)]
@@ -49,4 +55,8 @@ ganhadores = ['Marcus', 'John']
 lista_final = [nome + ' GANHADOR' if nome in ganhadores else nome +
                ' NÃO SELECIONADO' for nome in participantes]
 print(lista_final)
-# ['Larissa NÃO SELECIONADO', 'Rafael NÃO SELECIONADO', 'Marcus GANHADOR', 'John GANHADOR']
+# ['Larissa NÃO SELECIONADO', 
+# 'Rafael NÃO SELECIONADO', 
+# 'Marcus GANHADOR', 
+# 'John GANHADOR']
+```
