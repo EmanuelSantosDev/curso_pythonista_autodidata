@@ -1,22 +1,13 @@
-'''
-HERANÇA MÚLTIPLA
+# Herança Múltipla
+
+- É um recurso da programação orientada a objetos que permite que uma classe  herde atributos e métodos de mais de uma classe pai. 
+- Em outras palavras, uma classe pode herdar características de várias classes pai.
+- Oferece grande flexibilidade, permitindo que você reutilize código de várias fontes e crie classes com funcionalidades combinadas de várias classes pai.
+- O método ``mro()`` é usado para descobrir qual é a ordem em que as classes são percorridas para resolver a chamada de método ou proprieades em herança múltipla. 
+- Havendo classes pai com mesmo atributo e método, o ``mro()`` irá nos mostrar qual é a sequência de prioridade.
 
 
-é um recurso da programação orientada a objetos que permite que uma classe 
-herde atributos e métodos de mais de uma classe pai. 
-
-Em outras palavras, uma classe pode herdar características de várias classes pai.
-
-Oferece grande flexibilidade, permitindo que você reutilize código de várias fontes 
-e crie classes com funcionalidades combinadas de várias classes pai.
-
-O método 'mro()' é usado para descobri qual é a ordem em que as classes são 
-percorridas para resolver a chamada de método ou proprieades em herança múltipla. 
-Havendo classes pai com mesmo atributo e método, o 'mro()' irá nos mostrar qual é 
-a sequência de prioridade.
-'''
-
-
+```python
 class Animal:
     def fazer_som(self):
         print("Som genérico de animal")
@@ -68,3 +59,4 @@ pato.voar()           # Output: Ave voando
 print(Morcego.mro())
 # [<class '__main__.Morcego'>, <class '__main__.Animal'>,
 # <class '__main__.Mamifero'>, <class '__main__.Ave'>, <class 'object'>]
+```

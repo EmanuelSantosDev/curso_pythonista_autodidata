@@ -1,15 +1,11 @@
-'''
-TIPOS DE VARIÁVEIS DA CLASSE
-============================
+# Tipos de Variáveis da Classe
 
 
-VARIÁVEIS DA CLASSE - cria um "valor padrão" que pode ser modificado, e assim, 
-todas as classes abaixo receberão esta propriedade atualizada)
-
-VARIÁVEIS DA INSTÂNCIA - pertencem exclusivamente à instância
-'''
+- **Variáveis da Classe** - cria um "valor padrão" que pode ser modificado, e assim,  todas as classes abaixo receberão esta propriedade atualizada.
+- **Variáveis da Instância** - pertencem exclusivamente à instância.
 
 
+```python
 class Computador:
     # Variávies da Classe
     sistema_operacional = 'Windows 11'
@@ -37,3 +33,4 @@ computador = Computador('DELL', '8gb', 'NVIDIA')
 computador.exibir_dados_do_computador()
 # Computador marca DELL, com 8gb de memória RAM,
 # placa de vídeo NVIDIA e sistema operacional Linux
+```

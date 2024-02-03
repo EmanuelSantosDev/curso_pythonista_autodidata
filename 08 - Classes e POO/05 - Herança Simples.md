@@ -1,26 +1,15 @@
-'''
-HERANÇA SIMPLES
-===============
+# Herança Simples
 
 
-A herança é um conceito fundamental da programação orientada a objetos, 
-que permite que uma classe herde atributos e métodos de outra classe. 
-
-Quando uma classe herda de outra, ela é chamada de "classe filha" ou "subclasse", 
-e a classe da qual ela herda é chamada de "classe pai" ou "superclasse".
-
-A principal vantagem da herança é a reutilização de código.
-
-A função 'super' é usada para acessar métodos e atributos da classe pai a partir de 
-uma classe filha.
-
-É possível sobrescrever métodos da classe pai.
-
-A função 'issubclass()' é usada para verificar se uma classe é uma subclasse de 
-outra classe.
-'''
+- A herança é um conceito fundamental da programação orientada a objetos,  que permite que uma classe herde atributos e métodos de outra classe. 
+- Quando uma classe herda de outra, ela é chamada de "classe filha" ou "subclasse", e a classe da qual ela herda é chamada de "classe pai" ou "superclasse".
+- A principal vantagem da herança é a reutilização de código.
+- A função ``super`` é usada para acessar métodos e atributos da classe pai a partir de uma classe filha.
+- É possível sobrescrever métodos da classe pai.
+- A função ``issubclass()`` é usada para verificar se uma classe é uma subclasse de outra classe.
 
 
+```python
 class Camera:
     def __init__(self, marca, megapixels):
         self.marca = marca
@@ -62,3 +51,4 @@ celular.upar_fotos()  # Fotos enviadas para a Rede Interna
 # Verificando se uma classe é instância de outra
 print(issubclass(CameraCelular, Camera))  # True
 print(issubclass(Camera, CameraCelular))  # False
+```
