@@ -3,24 +3,22 @@
 
 Divide uma string em substrings com base em um delimitador específico:
 ```python
-frase = 'Olá, bem-vindo a este treinamento!'
-
-print(frase.split())  # ['Olá,', 'bem-vindo', 'a', 'este', 'treinamento!']
-print(frase.split(','))  # ['Olá', ' bem-vindo a este treinamento!']
-print(frase.split('-'))  # ['Olá, bem', 'vindo a este treinamento!']
-
-
-nomes = 'Emanuel, Susi, Yasmin, Rafaela,Samuel'
-
-print(nomes.split())  # ['Emanuel,', 'Susi,', 'Yasmin,', 'Rafaela,Samuel']
-print(nomes.split(','))  # ['Emanuel', ' Susi', ' Yasmin', ' Rafaela', 'Samuel']
+# Dividir uma string com base nos espaços entre as palavras:
+frase = "Python é uma linguagem de programação"
+palavras = frase.split()
+print(palavras)  # Saída: ['Python', 'é', 'uma', 'linguagem', 'de', 'programação']
 
 
-hashtags = 'music #guitar #gamer #coder #python'
+# Dividir uma string com base em um caractere específco:
+frase = "Python,Java,C++,JavaScript"
+linguagens = frase.split(",")
+print(linguagens)  # Saída: ['Python', 'Java', 'C++', 'JavaScript']
 
-print(hashtags.split())  # ['music', '#guitar', '#gamer', '#coder', '#python']
-print(hashtags.split('#'))  # ['music ', 'guitar ', 'gamer ', 'coder ', 'python']
-print(hashtags.split('#', 3))  # ['music ', 'guitar ', 'gamer ', 'coder #python']
+
+# Dividir uma string em um número máximo de partes:
+frase = "Python é uma linguagem de programação"
+palavras = frase.split(maxsplit=2)
+print(palavras)  # Saída: ['Python', 'é', 'uma linguagem de programação']
 ```
 
 
