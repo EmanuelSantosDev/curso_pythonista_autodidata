@@ -13,8 +13,6 @@ enumerate(iteravel, start=0)
 
 
 # Enumerate sobre uma Lista
-
-
 frutas = ['Maça', 'Banana', 'Melão', 'Morango']
 for indice, fruta in enumerate(frutas):
     print(f'{indice} - {fruta}')
@@ -25,8 +23,6 @@ for indice, fruta in enumerate(frutas):
 
 
 # Enumerate com índice inicial de nº 1000
-
-
 for i, n in enumerate(range(30, 50, 3), 1000):
     print(f'{i} - {n}')
     # 1000 - 30

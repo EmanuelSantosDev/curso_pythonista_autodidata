@@ -1,8 +1,7 @@
 # Operadores in e not in
 
 
-São operadores de pertencimento que verificam se um valor está presente em uma
-sequência (como uma lista, tupla, conjunto ou string) ou não.
+São operadores de pertencimento que verificam se um valor está presente em uma sequência, como uma lista, tupla, conjunto ou string.
 
 
 ```python
@@ -11,13 +10,8 @@ sequência (como uma lista, tupla, conjunto ou string) ou não.
 
 lista = [1, 2, 3, 4, 5]
 
-# Verifica se o valor 3 está presente na lista
-print(3 in lista)  # Saída: True
-
-# Verifica se o valor 6 não está presente na lista
+print(3 in lista)      # Saída: True
 print(6 not in lista)  # Saída: True
-
-# Verifica se o valor 5 não está presente na lista
 print(5 not in lista)  # Saída: False
 
 
@@ -26,12 +20,7 @@ print(5 not in lista)  # Saída: False
 
 texto = "Python é uma linguagem de programação poderosa"
 
-# Verifica se a substring "linguagem" está presente no texto
 print("linguagem" in texto)  # Saída: True
-
-# Verifica se a substring "Java" não está presente no texto
-print("Java" not in texto)  # Saída: True
-
-# Verifica se a substring "sql" está presente no texto
-print("sql" in texto)  # Saída: False
+print("Java" not in texto)   # Saída: True
+print("sql" in texto)        # Saída: False
 ```

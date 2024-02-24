@@ -57,5 +57,8 @@ print(produtos)
 
 # Ordem DECRESCENTE
 produtos.sort(key=itemgetter(0), reverse=True)
-print(produtos)  # [('Microfone', 550), ('Celular', 750), ('Bicicleta', 1500)]
+print(produtos)  
+# [('Microfone', 550), 
+# ('Celular', 750), 
+# ('Bicicleta', 1500)]
 ```

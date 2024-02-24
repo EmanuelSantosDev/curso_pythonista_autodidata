@@ -38,7 +38,7 @@ for numero in range(1, 21, 2):
 # carregando #19
 
 
-# Criando listas rapidamente utilizando range()
+# criando listas rapidamente utilizando range()
 minha_lista = list(range(0, 201, 10))
 print(minha_lista)
 # [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100,

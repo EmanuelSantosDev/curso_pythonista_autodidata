@@ -1,4 +1,7 @@
-# Combinando Pares de Listas com a função zip
+# Percorrendo Iteráveis Combinados
+
+
+### Combinando Pares de Listas com a função zip
 
 
 - A função ``zip()`` é utilizada para combinar elementos de iteráveis (como listas, tuplas, etc.) em pares ordenados.
@@ -22,7 +25,7 @@ E: 6
 ```
 
 
-# Combinando Listas de Tamanhos Diferentes com a função zip_longest
+### Combinando Pares de Listas de Tamanhos Diferentes com a função zip_longest
 
 
 ```python
