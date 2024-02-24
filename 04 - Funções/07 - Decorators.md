@@ -4,7 +4,7 @@
 
 - é uma construção que permite modificar ou estender a funcionalidade de funções ou métodos sem alterar seu código interno.
 - o decorator _envolve_ a função alvo.
-- são uma forma elegante de reutilização de código.
+- é uma forma elegante de reutilização de código.
 
 
 ```python

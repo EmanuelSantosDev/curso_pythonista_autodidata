@@ -18,14 +18,14 @@ exibir_preco('Iphone', 5000)
 exibir_preco(preco='937', nome_produto='Samsung')
 
 
-# Obrigando que Todos os Argumentos Devem ser Nomeados a partir do '*'
+# Todos os argumentos devem ser nomeados partir do '*'
 
 
 def exibir_preco_v2(nome_produto, *, preco):
     print(f'{nome_produto} está no valor de: {preco}')
 
 
-# exibir_preco_v2('Iphone', 5000)
+exibir_preco_v2('Iphone', 5000)
 # TypeError: exibir_preco_v2() takes 1 positional argument but 2 were given
 
 

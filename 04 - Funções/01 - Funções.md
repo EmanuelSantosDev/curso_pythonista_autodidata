@@ -20,7 +20,7 @@ def dar_boas_vindas_personalizada(nome):
 dar_boas_vindas_personalizada('Emanuel')  # Seja bem-vindo(a) Emanuel
 
 
-# valor padrão
+# com valor padrão
 
 
 def nome_cidade(cidade='Porto Alegre'):
@@ -30,7 +30,7 @@ nome_cidade('São Paulo')  # Você está em São Paulo
 nome_cidade()  # Você está em Porto Alegre
 
 
-# valor não padrão + valor padrão
+# sem valor padrão + com valor padrão
 
 
 def pedir_lanche(quantidade, lanche='Hamburguer'):
