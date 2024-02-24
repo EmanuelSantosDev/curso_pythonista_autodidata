@@ -34,7 +34,6 @@ with open('celulares.txt', 'w') as arquivo:
 
 # Acrescentar (a)
 nomes = ['Emanuel', 'Amanda', 'Susi', 'Roberto', 'Tiago']
-
 with open('nomes.txt', 'a', newline='') as arquivo:
     for nome in nomes:
         arquivo.write(nome + os.linesep)
@@ -42,7 +41,6 @@ with open('nomes.txt', 'a', newline='') as arquivo:
 
 # Números precisam ser convertidos para Strings
 numeros = [1, 2, 3, 4, 5, 6]
-
 with open('numeros.txt', 'a', newline='') as arquivo:
     for n in numeros:
         arquivo.write(str(n) + os.linesep)
