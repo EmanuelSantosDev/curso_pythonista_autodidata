@@ -63,8 +63,6 @@ class Computador:
 
 
 # Instanciando Computadores Personalizados a partir dos Métodos da Classe
-
-
 computador_backoffice = Computador.computador_escritorio('8gb')
 computador_hardcore = Computador.computador_trabalho_pesado('32gb')
 
@@ -78,8 +76,6 @@ computador_hardcore.exibir_dados_do_computador()
 
 
 # Utilizando o Método Estático
-
-
 print(Computador.roda_programas_pesados(10))  # True
 print(Computador.roda_programas_pesados(4))  # False
 ```

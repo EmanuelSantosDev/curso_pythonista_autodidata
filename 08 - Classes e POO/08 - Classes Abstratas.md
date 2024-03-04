@@ -29,7 +29,7 @@ class Gato(Animal):
 
 
 # Não é possível instanciar diretamente uma classe abstrata
-# animal = Animal() resultaria em um erro
+animal = Animal() resultaria em um erro
 
 
 # Instanciando as subclasses
