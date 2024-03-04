@@ -19,8 +19,7 @@ except IndexError as erro:
 # Traceback do Código Acima antes de incluir o bloco Try-Except:
 '''
 Traceback (most recent call last):
-  File "c:\\repositorios\\curso_pythonista_autodidata\\07 - Tratamento 
-  de Erros\\03 - Quais Exceções Tratar.py", line 28, in <module>
+  File "c:\\repositorios\\curso_pythonista_autodidata\\app.py", line 28, in <module>
     print(meses[15])
           ~~~~~^^^^
 IndexError: list index out of range '''
