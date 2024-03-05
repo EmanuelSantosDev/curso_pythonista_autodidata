@@ -1,31 +1,27 @@
 # Tipos de Métodos da Classe
 
 
-## Métodos Comuns
+## Métodos Comuns ou Métodos da Instância
 
 
-- Acessam as propriedades da instância através do parâmetro ``self``.
+- São métodos que acessam as propriedades da instância através do parâmetro ``self``.
+- Operam especificamente sobre os dados de uma instância.
+- São métodos que pertencem à instância, diferente dos que veremos abaixo, que pertencem à classe.
 
 
 ## Métodos da Classe
 
 
-- Úteis em cenários específicos, como por exemplo, modificar  como uma classe é instanciada, através de novos construtores personalizados. 
-- Exemplos de uso para uma classe de computador:
-   - Configuração para Cliente de Escritório
-   - Configuração para Clientes de Trabalho Pesado
-- Utilizamos o parâmetro ``cls`` por convenção, informando que estamos passando
-a classe inteira e não a instância.
-- Utilizamos também o decorador ``@classmethod`` para converter uma função em um
-método da classe.
+- Um método de classe (``@classmethod``) recebe como seu primeiro argumento uma classe (``cls``) ao invés de um objeto (``self``) e pode ser acessado diretamente pela classe, sem a necessidade de criarmos um objeto.
+- São úteis em cenários específicos, como por exemplo, quando precisamos alterar a classe em si, criando construtores personalizados (ver exemplo dos computadores abaixo)
 
 
 ## Métodos Estáticos
 
 
-- São os métodos que não utilizam a instância da classe através do ``self`` e também não modificam as propriedades da classe através do ``cls``. 
+- Um método estático (``@staticmethod``), não receberá uma classe (``cls``) nem um objeto (``self``) como argumento.
+- Assim como no método de classe também podemos acessar esse método diretamente pela classe sem a necessidade de criarmos um objeto.
 - São úteis para criar uma classe onde serão agrupadas funcionalidades relacionadas à um tema específico.
-- São configuradas utilizando o decorador ``@staticmethod``.
 
 
 ```python
@@ -37,7 +33,7 @@ class Computador:
         self.memoria_ram = memoria_ram
         self.placa_de_video = placa_de_video
 
-    # Método Comum
+    # Método Comum (Método da Instância)
     def exibir_dados_do_computador(self):
         print(f'Computador marca {self.marca}, com {
               self.memoria_ram} de memória RAM, {

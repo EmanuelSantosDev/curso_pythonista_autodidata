@@ -1,7 +1,7 @@
 # Tipos de Variáveis da Classe
 
 
-- **Variáveis da Classe** - cria um "valor padrão" que pode ser modificado, e assim,  todas as classes abaixo receberão esta propriedade atualizada.
+- **Variáveis da Classe** - cria um "valor padrão", mas que também pode ser modificado, e assim,  todas as classes abaixo receberão esta propriedade atualizada.
 - **Variáveis da Instância** - pertencem exclusivamente à instância.
 
 
