@@ -1,37 +1,21 @@
-# Curso Pythonista Autodidata
+# Cursos Python
 
-Bem-vindo ao repositório do **Curso Pythonista Autodidata**! 
+Este repositório serve como um guia de referência rápida e material de apoio para revisão de conceitos estudados em cursos de Python, abrangendo os seguintes tópicos:
 
-## Descrição
+- Fundamentos de Python
+- Automação/RPA (Robotic Process Automation)
+- Trabalhando como Freelancer
 
-Estou fazendo este curso na [Dev Aprender](https://devaprender.com/). O mesmo abrange os conceitos fundamentais de Python, incluindo estruturas de dados, controle de fluxo, funções, classes e muito mais. Ele é adequado para iniciantes em programação, bem como para aqueles que desejam aprimorar suas habilidades de Python.
+## Estrutura do Repositório
 
-## Conteúdo do Curso
-
-O curso é dividido em várias seções, incluindo:
-
-- Introdução à Programação com Python
-- Tipos de Dados e Variáveis
-- Estruturas de Controle de Fluxo (if, else, elif, while, for)
-- Estruturas de Dados (listas, tuplas, conjuntos, dicionários)
-- Funções e Modularidade
-- Programação Orientada a Objetos (Classes, Métodos, Herança)
-- Manipulação de Arquivos
-- Tratamento de Exceções
-- E muito mais!
+- **Fundamentos de Python/**: Pasta contendo material relacionado aos fundamentos de Python, como scripts, exemplos de código e exercícios.
+- **Automação/**: Pasta dedicada a recursos relacionados à automação e RPA com Python, incluindo bibliotecas, tutoriais e projetos práticos.
+- **Freelancer/**: Recursos e dicas para quem deseja trabalhar como freelancer utilizando Python, como orientações sobre precificação, gerenciamento de projetos e mais.
 
 ## Como Usar Este Repositório
 
-- Cada seção do curso está organizada em diretórios separados.
-- Dentro de cada diretório, você encontrará os materiais de aprendizado.
-- Sinta-se à vontade para explorar o conteúdo, seguir os exemplos e aprender os fundamentos de Python.
+Sinta-se à vontade para explorar as pastas e arquivos conforme sua necessidade de revisão ou consulta rápida. Cada pasta contém material específico relacionado ao tópico correspondente.
 
 ## Contribuições
 
-Contribuições são bem-vindas! Se você encontrar erros, tiver sugestões de melhorias, sinta-se à vontade para abrir um problema ou enviar um pull request.
-
-## Contato
-
-Se tiver alguma dúvida ou precisar de assistência, entre em contato comigo através do email [emanuel.santos.developer@gmail.com](mailto:emanuel.santos.developer@gmail.com).
-
-Divirta-se aprendendo Python!
+Contribuições são bem-vindas! Se você deseja adicionar mais recursos, corrigir erros ou melhorar a documentação, sinta-se à vontade para abrir um pull request.
