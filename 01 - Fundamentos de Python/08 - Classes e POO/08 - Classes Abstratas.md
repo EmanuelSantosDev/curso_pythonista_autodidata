@@ -1,11 +1,11 @@
 # Classes Abstratas
 
 
-- São classes que não podem ser instanciadas diretamente, mas são projetadas  para serem subclasses de outras classes
-- Fornecem uma maneira de definir um contrato comum para várias subclasses,  garantindo(e obrigando) que certos métodos sejam implementados por todas elas.
-- Uma classe abstrata pode conter métodos abstratos, que são métodos sem  implementação definida na classe abstrata, mas que devem ser implementados  pelas subclasses.
+- São classes que não podem ser instanciadas diretamente, mas servem como modelos para outras classes derivadas. 
+- Fornecem uma maneira de definir um contrato comum para várias subclasses, garantindo(e obrigando) que certos métodos sejam implementados por todas elas.
+- Elas geralmente contêm métodos abstratos, que são métodos declarados, mas não implementados.
 - A biblioteca ``abc`` (Abstract Base Classes) fornece suporte para a criação de classes abstratas. 
-- Para definir uma classe abstrata, você pode herdar da classe ``ABC`` e usar o  decorador ``@abstractmethod``.
+- Para definir uma classe abstrata, ela deve herdar a classe ``ABC`` e usar o  decorador ``@abstractmethod`` em seus métodos.
 
 
 ```python
