@@ -25,8 +25,7 @@ import pyperclip
 def escrever_frase(frase):
     # Copia a frase para a área de transferência
     pyperclip.copy(frase)
-    # Simula um atalho de teclado para colar o conteúdo 
-    # da área de transferência usando Ctrl+V
+    # Colando o conteúdo
     pyautogui.hotkey('ctrl', 'v')
 
 
