@@ -1,4 +1,4 @@
-# Utilizando o Teclado para Pausar uma Execução
+# Interrompendo o Bot Manualmente
 
 
 - A biblioteca ``keyboard`` é uma ferramenta para interagir com o teclado do computador. 
