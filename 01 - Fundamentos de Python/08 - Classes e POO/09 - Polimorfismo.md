@@ -15,31 +15,23 @@
 - **Polimorfismo de Sobrecarga (Overloading)**: não é suportada da mesma forma que em linguagens como Java ou C++, onde você pode ter vários métodos com o mesmo nome, mas diferentes tipos ou números de parâmetros. Porém, podemos simulá-la de algumas maneiras.
 
 
-### Polimorfismo de sobrescrita
+### Polimorfismo de Sobrescrita
 ```python
-class Animal:
-    def fazer_som(self):
-        pass
+class Super:
+   def hello(self):
+      print("Olá, sou a superclasse!")
 
-class Cachorro(Animal):
-    def fazer_som(self):
-        print("Au au")
+class Sub (Super):
+   def hello(self):
+      print("Olá, sou a subclasse!")
 
-class Gato(Animal):
-    def fazer_som(self):
-        print("Miau")
+class Subsub (Sub):
+   def hello(self):
+      print("Olá, sou a subsubclasse!")
 
-# Função que utiliza polimorfismo
-def emitir_som(animal):
-    animal.fazer_som()
 
-# Criando instâncias das subclasses
-cachorro = Cachorro()
-gato = Gato()
-
-# Chamando a função com diferentes tipos de objetos
-emitir_som(cachorro)  # Output: Au au
-emitir_som(gato)      # Output: Miau
+meu_objeto = Subsub()
+print(meu_objeto.hello())  # "Olá, sou a subsubclasse!"
 ```
 
 
