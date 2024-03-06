@@ -23,7 +23,7 @@ import pyperclip
 
 
 def escrever_frase(frase):
-    # Copia a frase para a área de transferência
+    # Copiando a frase para a área de transferência
     pyperclip.copy(frase)
     # Colando o conteúdo
     pyautogui.hotkey('ctrl', 'v')
