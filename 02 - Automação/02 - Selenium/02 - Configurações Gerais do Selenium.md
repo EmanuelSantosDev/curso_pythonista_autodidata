@@ -1,4 +1,4 @@
-# Configurações do Selenium
+# Configurações Gerais do Selenium
 
 
 ## Chromium Command Line Switches
@@ -69,10 +69,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
 # Importa a classe ActionChains para realizar ações complexas e encadeadas.
 from selenium.webdriver import ActionChains
-# Importa a função sleep do módulo time para introduzir pausas no script.
-from time import sleep
-# Importa o módulo random para geração de números aleatórios.
-import random
 
 
 def iniciar_driver():
@@ -126,5 +122,5 @@ driver, wait = iniciar_driver()
 
 
 input('digite algo para fechar... ')
-driver.close()
+driver.quit()
 ```
