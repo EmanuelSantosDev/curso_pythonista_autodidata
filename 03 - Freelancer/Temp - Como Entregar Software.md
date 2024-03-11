@@ -13,7 +13,7 @@
    - Fazer uma reunião com o cliente de 15 min para entender qual é a demanda real
    - Devo gravar essa reunião?
       - Sim
-      - Ou não, caso tenha feito um NDA (Non Disclosure Agreement), ou seja, um contrato que te obriga legalmente à não divultar nenhuma informação que foi compartilhada com você
+      - Ou não, caso tenha feito contrato que te obriga legalmente à não divultar nenhuma informação que foi compartilhada com você
 - **Quais são os principais tipos de entregas que posso fazer para o meu cliente**
    - **Executável**
       - Código no Terminal
