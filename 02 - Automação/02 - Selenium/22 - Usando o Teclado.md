@@ -1,11 +1,11 @@
-# Usando as Teclas do Teclado
+# Usando o Teclado
 
 
 ```python
 # importando a classe Keys
 from selenium.webdriver.common.keys import Keys
 
-# localizando o elemento e selecionado
+# localizando e selecionando o elemento
 botao = driver.find_element(By.ID, 'WindowsRadioButton')
 botao.click()
 

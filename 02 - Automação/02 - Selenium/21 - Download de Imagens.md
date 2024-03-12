@@ -1,10 +1,10 @@
 # Download de Imagens
 
 - <mark>**ATENÇÃO!!! o elemento precisa estar inteiramente visível antes de ser 'printado'!!!**</mark>
-- O argumento ``'wb'`` abre o arquivo no modo de escrita binária, pronto para receber dados de imagem.
-- Útil para tipos de dados binários como imagens, áudio, etc...
-- Não realiza codificação de caracteres.
-- Garante que os dados sejam gravados exatamente como são, sem modificações.
+- O argumento ``'wb'`` abre o arquivo no modo de escrita binária, pronto para receber dados de imagem:
+   - útil para tipos de dados binários como imagens, áudio, etc...
+   - não realiza codificação de caracteres.
+   - garante que os dados sejam gravados exatamente como são, sem modificações.
 
 ```python
 # baixando uma imagen única
