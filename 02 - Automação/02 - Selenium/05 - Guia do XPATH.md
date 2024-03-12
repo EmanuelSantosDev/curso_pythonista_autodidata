@@ -46,13 +46,13 @@
 
 #### Contém uma Parte do Texto
 ```
-//*[contains(text(),"Exemplo")] 
-//*[contains(text(),"Exemplo") or contains(text(), "Dropdown")]
-//*[contains(text(),"Dropdown") and contains(text(), "Bootstrap")]
+//h2[contains(text(),"Exemplo")] 
+//h2[contains(text(),"Exemplo") or contains(text(), "Dropdown")]
+//h2[contains(text(),"Dropdown") and contains(text(), "Bootstrap")]
 ```
 
 #### Inicia com um Texto Específico
 ```
-//*[starts-with(text(), "Exemplo")]
-//*[starts-with(@class, "btn")]
+//h2[starts-with(text(), "Exemplo")]
+//h2[starts-with(@class, "btn")]
 ```
