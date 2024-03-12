@@ -22,7 +22,7 @@ find_elements(seletor)
 ```
 
 
-# Identificadores de Localização (classe By)
+## Identificadores de Localização (classe By)
 
 
 Importando a classe ``By``:
@@ -68,9 +68,6 @@ titulo = driver.find_element(By.TAG_NAME, 'h1')
 #### Identificador de XPATH
 ```python
 titulo = driver.find_element(By.XPATH, '//*[text()="ZONA DE TESTES"]')
-
-if titulo:
-   print(titulo.text)  # ZONA DE TESTES
 ```
 
 
@@ -81,7 +78,7 @@ elementos_form_chec = driver.find_element(By.CSS_SELECTOR,'input[class="form-che
 ```
 
 
-# Elementos Escondidos e Elementos Dinâmicos
+## Elementos Escondidos e Elementos Dinâmicos
 
 
 - Alguns elementos podem precisar de alguma interação prévia antes que os mesmos fiquem disponíveis na Tela ou no DOM.
