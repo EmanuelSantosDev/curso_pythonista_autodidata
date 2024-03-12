@@ -2,9 +2,6 @@
 
 
 ```python
-# Navega até um site
-driver.get("https://cursoautomacao.netlify.com/")  
-
 # Maximiza a janela
 driver.maximize_window() 
 
@@ -36,7 +33,4 @@ texto_do_elemento = driver.find_element(
 # Obtém o valor de um atributo
 valor_do_atributo = driver.find_element(
    By.XPATH, '//a[@class="navbar-brand"]').get_attribute("style")
-
-# Fecha a janela (ou aba) atual que está sendo controlada pelo WebDriver
-driver.close() 
 ```
