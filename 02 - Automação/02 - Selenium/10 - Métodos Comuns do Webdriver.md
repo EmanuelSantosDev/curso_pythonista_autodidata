@@ -27,8 +27,7 @@ endereco = driver.current_url
 codigo_fonte = driver.page_source
 
 # Obtém o texto dentro de um elemento
-texto_do_elemento = driver.find_element(
-   By.XPATH, '//a[@class="navbar-brand"]').text
+texto_do_elemento = driver.find_element(By.TAG_NAME, 'h1').text
 
 # Obtém o valor de um atributo
 valor_do_atributo = driver.find_element(
