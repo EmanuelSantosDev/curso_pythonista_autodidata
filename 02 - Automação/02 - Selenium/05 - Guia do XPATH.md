@@ -23,21 +23,6 @@
 //thead/tr/th[2]
 ```
 
-#### Ultra Genérico (engloba todas os elementos da página)
-```
-//* 
-```
-
-#### Ultra genérico + Tag (seleciona todos os elementos que contém esta tag)
-```
-//*[tag]
-```
-
-#### Tag
-```
-//tag
-```
-
 #### Buscando por um Texto Espefícico
 ```
 //*[text()="Exemplo Checkbox"]      # Genérico, porém especificando o texto
