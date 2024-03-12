@@ -30,6 +30,5 @@ codigo_fonte = driver.page_source
 texto_do_elemento = driver.find_element(By.TAG_NAME, 'h1').text
 
 # Obtém o valor de um atributo
-valor_do_atributo = driver.find_element(
-   By.XPATH, '//a[@class="navbar-brand"]').get_attribute("style")
+valor_do_atributo = driver.find_element(By.TAG_NAME, 'h1').get_attribute("style")
 ```
