@@ -2,8 +2,8 @@
 
 
 ### O que é Web Scraping?
-- Raspagem da web
-- Varrer sites para obter dados
+- Raspagem da Web
+- Processo de "varrer" sites para obter dados
 
 
 ### Como isso pode ser feito?
@@ -33,7 +33,7 @@
 ### Como posso varrer um site?
 - Navegue até um site usando o Scrapy
 - Determine o que quer extrair dentro do HTML
-- Crie um código que extrai apenas aquela parte que é do seu interesse (normalmente usando XPATH ou Seletores CSS)
+- Crie um código que extrai apenas o que é do seu interesse (usando XPATH ou Seletores CSS)
 - Salve os dados
 
 
