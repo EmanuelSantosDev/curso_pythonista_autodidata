@@ -95,7 +95,7 @@ source <nome-do-ambiente>/bin/activate
 
 
 ```
-pip3 install selenium webdriver-manager
+pip3 install -r requirements.txt
 ```
 
 
@@ -113,39 +113,6 @@ python3 app.py
 ```
 ctrl + c
 ```
-
-
-## Executando Múltiplos Programas (Terminal Desbloqueado)
-
-
-- ``nohup``: permite que o processo continue em execução mesmo que você feche o terminal ou deslogue.
-- ``&``: coloca o comando anterior (no caso, python3 app.py) em segundo plano, permitindo que você continue usando o terminal enquanto o processo está em execução.
-- retornará um número de ``id`` que é essencial para identificar o processo (bot) rodando no sistema. 
-- cria um arquivo chamado ``nohup.out`` que armazena qualquer saída que normalmente seria exibida no terminal e é útil para verificar mensagens de erro ou outras informações de diagnóstico.
-
-```
-nohup python3 app.py &
-```
-
-
-## Verificando o arquivo ``nohup.out``
-
-
-```
-cat nohup.out
-```
-
-
-## Encerrando o Processo Através do Gerenciador de Tarefas
-
-
-```
-htop
-```
-
-- Localizar o processo em execução
-- ``F9`` (kill) + ``Enter``
-
 
 
 ## Desativando o Ambiente Virtual
