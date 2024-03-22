@@ -10,6 +10,14 @@ arguments = ['--lang=en-US', '--window-size=1920,1080',
 ```
 
 
+## Verificando Instalação do Python
+
+
+```
+python3 --version
+```
+
+
 ## Atualizando os Pacotes do Sistema Operacional
 
 
