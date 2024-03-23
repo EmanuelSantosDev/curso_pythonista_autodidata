@@ -103,11 +103,11 @@ source <nome-do-ambiente>/bin/activate
 
 
 ```
-pip3 install -r requirements.txt
+pip3 install selenium webdriver-manager
 ```
 
 
-## Rodando a Aplicação
+## Rodando a Aplicação (visivel no terminal)
 
 
 ```
@@ -115,11 +115,55 @@ python3 app.py
 ```
 
 
-## Encerrando a Aplicação
+## Encerrando a Aplicação (visivel no terminal)
 
 
 ```
 ctrl + c
+```
+
+
+## Rodando a Aplicação em Segundo Plano
+
+
+- ``nohup``: permite que o script continue a ser executado em segundo plano mesmo após o usuário sair da sessão. Todas as mensagens de saída padrão e erros são redirecionadas para o arquivo ``nohup.out``.
+- ``&``: coloca o script para ser executado em segundo plano, o que significa que você pode continuar a usar o terminal. Irá retornar o número de `id` do processo.
+```
+nohup python3 app.py &
+```
+
+
+## Configurando a Saída Padrão para o arquivo nohup.out
+
+
+```python
+import sys
+
+# Abre o arquivo nohup.out em modo de escrita
+with open('nohup.out', 'w') as f:
+    # Redireciona a saída padrão para o arquivo nohup.out
+    sys.stdout = f
+
+    # Exemplo de uso da função print()
+    print("Esta saída será redirecionada para nohup.out")
+
+    # Restaura a saída padrão para o terminal
+    sys.stdout = sys.__stdout__
+
+```
+
+**Visualizando as saídas:**
+```
+cat nohup.out
+nano nohup.out
+```
+
+
+## Abrindo o Gerenciador de Tarefas
+
+
+```
+htop
 ```
 
 
