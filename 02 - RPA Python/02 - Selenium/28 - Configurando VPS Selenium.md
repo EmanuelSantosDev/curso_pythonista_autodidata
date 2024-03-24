@@ -140,16 +140,15 @@ nohup python3 app.py &
 import sys
 
 # Abre o arquivo nohup.out em modo de escrita
-with open('nohup.out', 'w') as f:
+with open('nohup.out', 'a') as nohup_log:
     # Redireciona a saída padrão para o arquivo nohup.out
-    sys.stdout = f
+    sys.stdout = nohup_log
 
     # Exemplo de uso da função print()
     print("Esta saída será redirecionada para nohup.out")
 
     # Restaura a saída padrão para o terminal
     sys.stdout = sys.__stdout__
-
 ```
 
 **Visualizando as saídas:**
