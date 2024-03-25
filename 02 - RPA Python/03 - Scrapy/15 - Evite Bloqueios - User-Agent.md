@@ -19,7 +19,9 @@
 ### Gerando Fake User-Agents
 
 
-A biblioteca ``scrapy-fake-useragent`` proporciona uma maneira simples de configurar e utilizar user-agents aleatórios em suas solicitações para evitar a detecção e o bloqueio por parte dos servidores web.
+- A biblioteca ``scrapy-fake-useragent`` proporciona uma maneira simples de configurar e utilizar user-agents aleatórios em suas solicitações para evitar a detecção e o bloqueio por parte dos servidores web.
+- A biblioteca fornece um _**middleware**_ que pode ser facilmente adicionado à configuração do Scrapy.
+- No contexto do Scrapy, um _**middleware**_ é um componente que intercepta as solicitações HTTP feitas pelo Scrapy e pode modificar ou adicionar funcionalidades a elas antes de serem enviadas para o servidor.
 
 
 **Instalação:**
