@@ -29,7 +29,8 @@ class ObterFrases(scrapy.Spider):
     def parse(self, response):
         for elemento in response.xpath("//div[@class='quote']"):
             loader = ItemLoader(item=CitacaoItem(),
-                                selector=elemento, response=response)
+                                selector=elemento,
+                                response=response)
             loader.add_xpath('frase', ".//div[@class='quoteText']/text()")
             loader.add_xpath('autor', ".//span[@class='authorOrTitle']/text()")
             loader.add_xpath('tags', ".//div[@class='greyText smallText left']/a/text()")
@@ -45,7 +46,7 @@ class ObterFrases(scrapy.Spider):
 - ``input_processor`` informa como que o dado que está entrando no processador será tratado. Podem existir campos que não precisam deste argumento, pois o dado já está vindo corretamente.
 - ``output_processor`` informa como que o dado que está saindo do processador será exportado.
 - ``MapCompose`` é um processador usado para aplicar uma função (ou uma lista de funções) a cada valor extraído de um campo.
-- ``TakeFirst`` seleciona o primeiro valor não nulo de uma lista de valores extraídos de um campo. É semelhante à utilização do `get()`.
+- ``TakeFirst`` é um processador que seleciona o primeiro valor não nulo de uma lista de valores extraídos de um campo. É semelhante à utilização do `get()`.
 - ``Join`` é um processador usado para juntar uma lista de valores em uma única string, separando-os por um delimitador específico.
 
 
