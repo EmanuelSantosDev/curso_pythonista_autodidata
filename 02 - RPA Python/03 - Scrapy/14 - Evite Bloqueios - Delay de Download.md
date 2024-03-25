@@ -1,4 +1,4 @@
-# 14 - Evite Bloqueio - Dalay de Download
+# 14 - Evite Bloqueio - Delay de Download
 
 
 - A variável ``DOWNLOAD_DELAY`` é uma configuração que determina o atraso (em segundos) entre as requisições sucessivas feitas pelo spider durante o scraping.
