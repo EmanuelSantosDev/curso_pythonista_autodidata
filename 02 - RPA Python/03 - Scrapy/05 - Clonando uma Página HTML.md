@@ -1,7 +1,12 @@
 # Clonando uma Página HTML
 
 
-### Os Spiders são criados no diretório `/spiders`:
+- As _spiders_ são criados no diretório `/spiders`.
+- Para rodar uma _spider_ é necessário primeiro entrar no diretório do projeto.
+- O comando `yield` é equivalente ao `return`. Porém, quando uma função atinge uma instrução ``yield``, ela retorna temporariamente o valor especificado e suspende sua execução, mantendo seu estado interno. Quando a função é chamada novamente, ela retoma a execução a partir do ponto onde foi suspensa.
+- Abrir um arquivo no modo binário (``wb``) é necessário quando você está lidando com tipos de dados que não são estritamente texto, como imagens, áudio, vídeo, entre outros, o que é importante para preservar a integridade dos dados.
+
+
 ```python
 import scrapy
 

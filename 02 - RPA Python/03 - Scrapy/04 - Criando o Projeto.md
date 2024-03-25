@@ -1,7 +1,7 @@
-# Instalando e Criando o Projeto
+# Criando o Projeto
 
 
-### Instalação
+### Instalando o Scrapy
 ```bash
 pip install scrapy
 ```
