@@ -1,8 +1,8 @@
 # Exportando para JSON, XML e CSV
 
 
-- ``-O`` para sobrescrever arquivos existentes
-- ``-o`` para acrescentar dados a arquivos existentes(não funciona com json)
+- ``-O`` para sobrescrever arquivos existentes.
+- ``-o`` para acrescentar dados a arquivos existentes (não funciona com JSON).
 
 
 ```
