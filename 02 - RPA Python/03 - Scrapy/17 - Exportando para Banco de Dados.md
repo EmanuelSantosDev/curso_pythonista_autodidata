@@ -13,16 +13,10 @@
 import sqlite3
 
 
-# classe que será usada como um pipeline para lidar com a 
-# persistência de dados em um banco de dados SQLite
 class SQLitePipeline(object):
-    # Método chamado quando o spider é aberto
     def open_spider(self, spider):
-        # Estabelecendo conexão com o banco de dados SQLite
         self.connection = sqlite3.connect('proxies.db')
-        # Criando um cursor para executar comandos SQL
         self.cursor = self.connection.cursor()
-        # Criando a tabela 'proxies' se ela ainda não existir
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS proxies(
                 ip_address TEXT NOT NULL PRIMARY KEY,
@@ -35,21 +29,12 @@ class SQLitePipeline(object):
                 last_checked TEXT
             )
         ''')
-        # Comitando as alterações no banco de dados
         self.connection.commit()
 
-    # Método chamado quando o spider é fechado
     def close_spider(self, spider):
-        # Fechando a conexão com o banco de dados
         self.connection.close()
 
-    # Método chamado para processar cada item extraído pelo spider
     def process_item(self, item, spider):
-        # Inserindo o item no banco de dados, ignorando se já existe um 
-        # registro com a mesma chave primária
-        # VALUES(?,?,?,?,?,?,?,?) são marcadores posicionais que correspondem
-        # ao número de valores que serão inseridos na tabela a fim de evitar 
-        # uma injeção de SQL
         self.cursor.execute('''
             INSERT OR IGNORE INTO proxies(ip_address,port,code,country,anonimity,google,https,last_checked) VALUES(?,?,?,?,?,?,?,?)
         ''', (
@@ -62,10 +47,7 @@ class SQLitePipeline(object):
             item.get('https'),
             item.get('last_checked'),
         ))
-        # Comitando as alterações no banco de dados
         self.connection.commit()
-        # Retornando o item processado para que ele possa continuar 
-        # sendo processado pelos outros pipelines, se houver
         return item
 ```
 
