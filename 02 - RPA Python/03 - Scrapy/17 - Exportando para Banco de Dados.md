@@ -36,8 +36,16 @@ class SQLitePipeline(object):
 
     def process_item(self, item, spider):
         self.cursor.execute('''
-            INSERT OR IGNORE INTO proxies(ip_address,port,code,country,anonimity,google,https,last_checked) VALUES(?,?,?,?,?,?,?,?)
-        ''', (
+            INSERT OR IGNORE INTO proxies(
+               ip_address,
+               port,
+               code,
+               country,
+               anonimity,
+               google,
+               https,
+               last_checked
+            ) VALUES(?,?,?,?,?,?,?,?)''', (
             item.get('ip_address'),
             item.get('port'),
             item.get('code'),
