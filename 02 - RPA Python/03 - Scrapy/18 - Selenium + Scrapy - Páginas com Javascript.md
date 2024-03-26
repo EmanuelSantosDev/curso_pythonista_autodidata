@@ -14,7 +14,7 @@
 scrapy shell 'https://dadosdinamicos.netlify.app/'
 response.body
 
-# Irá retornar scripts Javascript e não HTMl
+# Irá retornar scripts Javascript e não HTML
 ```
 
 
