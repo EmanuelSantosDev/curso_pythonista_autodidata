@@ -66,9 +66,12 @@ resposta = input('Devo iniciar a automação? (s/n)')
 if resposta == 's':
    bot = CrawlerProcess(
       settings={
-            "FEEDS": {
+         "FEEDS": {
             "livros.json": {"format":"csv"}
-         }
+         },
+         "ROBOTSTXT_OBEY": True,  
+         "USER_AGENT": 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+         "ITEM_PIPELINES": {'myproject.pipelines.MyPipeline': 300},
       }
    )
    bot.crawl(QuotesToScrapeSpider)
