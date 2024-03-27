@@ -9,7 +9,7 @@
 - Para solucionar isso usamos um navegador que consegue carregar javascript: o **Webdriver do Selenium**.
 
 
-**Exemplo:**
+**Exemplo prático de erro:**
 ```
 scrapy shell 'https://dadosdinamicos.netlify.app/'
 response.body
@@ -50,7 +50,7 @@ def iniciar_driver():
     # definindo o nível de informação que é exibida no console
     LOGGER.setLevel(logging.WARNING)
     # vamos carregar em Português, Full-HD para carregar as páginas
-    # corretamente e navegador aberto em 2º plano
+    # corretamente e o navegador aberto em 2º plano
     arguments = ['--lang=pt-BR', '--window-size=1920,1080', '--headless']
     for argument in arguments:
         chrome_options.add_argument(argument)
