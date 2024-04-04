@@ -32,12 +32,15 @@ import logging
 from selenium.webdriver.remote.remote_connection import LOGGER
 # o restante são as configurações padrão do Selenium
 from selenium.common.exceptions import *
-from selenium.webdriver.support import expected_conditions as CondicaoExperada
+from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.select import Select
+from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.options import Options
 # cria objetos que representam documentos HTML ou XML e fornecem
 # métodos para realizar seleções XPath e CSS nesses documentos
