@@ -7,7 +7,7 @@ from selenium.webdriver.support.select import Select
 
 
 # localizando o elemento 'select'
-paises_dropdown = driver.find_element(By.ID, 'paisselect')
+paises_dropdown = browser.find_element(By.ID, 'paisselect')
 
 # extraindo a lista de opções do elemento select
 opcoes = Select(paises_dropdown)

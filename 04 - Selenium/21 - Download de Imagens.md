@@ -8,13 +8,13 @@
 
 ```python
 # baixando uma imagen única
-simbolo_do_gremio = driver.find_element(By.XPATH, "//img[@alt='gremio']")
+simbolo_do_gremio = browser.find_element(By.XPATH, "//img[@alt='gremio']")
 with open('simbolo.jpg', 'wb') as arquivo:
     arquivo.write(simbolo_do_gremio.screenshot_as_png)
 
 
 # baixando múltiplas imagens
-imagens = driver.find_elements(By.TAG_NAME, 'img')
+imagens = browser.find_elements(By.TAG_NAME, 'img')
 contador = 1
 for imagem in imagens:
     with open(f'imagem{contador}.jpg', 'wb') as arquivo:

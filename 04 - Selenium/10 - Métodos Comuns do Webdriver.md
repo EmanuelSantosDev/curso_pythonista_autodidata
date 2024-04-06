@@ -3,32 +3,32 @@
 
 ```python
 # Maximiza a janela
-driver.maximize_window() 
+browser.maximize_window() 
 
 # Recarrega página atual
-driver.refresh()  
+browser.refresh()  
 
 # Recarrega página atual (versão 2)
-driver.get(driver.current_url) 
+browser.get(browser.current_url) 
 
 # Volta à página anterior
-driver.back()  
+browser.back()  
 
 # Avança para a próxima página no histórico de navegação
-driver.forward()  
+browser.forward()  
 
 # Obtém título da página
-titulo = driver.title
+titulo = browser.title
 
 # Obtém o URL(endereço) da página atual
-endereco = driver.current_url  
+endereco = browser.current_url  
 
 # Obtém o código-fonte HTML da página atual
-codigo_fonte = driver.page_source
+codigo_fonte = browser.page_source
 
 # Obtém o texto dentro de um elemento
-texto_do_elemento = driver.find_element(By.TAG_NAME, 'h1').text
+texto_do_elemento = browser.find_element(By.TAG_NAME, 'h1').text
 
 # Obtém o valor de um atributo
-valor_do_atributo = driver.find_element(By.TAG_NAME, 'h1').get_attribute("style")
+valor_do_atributo = browser.find_element(By.TAG_NAME, 'h1').get_attribute("style")
 ```

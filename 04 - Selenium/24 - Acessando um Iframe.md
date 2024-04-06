@@ -8,14 +8,14 @@
 
 ```python
 # localizando o iFrame
-iframe = driver.find_element(
+iframe = browser.find_element(
     By.XPATH, "//iframe[@src='https://cursoautomacao.netlify.app/desafios.html']")
 
 # acessando o iFrame
-driver.switch_to.frame(iframe)
+browser.switch_to.frame(iframe)
 
 # <<<< EXECUTA AS OPERAÇÕES NO IFRAME >>>>
 
 # saindo do iframe e acessando a página principal novamente
-driver.switch_to.default_content()
+browser.switch_to.default_content()
 ```

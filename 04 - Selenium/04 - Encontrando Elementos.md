@@ -33,48 +33,48 @@ from selenium.webdriver.common.by import By
 
 #### Identificador de ID
 ```python
-elemento = driver.find_element(By.ID, 'buttonalerta')
+elemento = browser.find_element(By.ID, 'buttonalerta')
 ```
 
 
 #### Identificador de NAME
 ```python
-campo_nome = driver.find_element(By.NAME, 'seu-nome')
+campo_nome = browser.find_element(By.NAME, 'seu-nome')
 ```
 
 
 #### Identificador de CLASS NAME
 ```python
-elemento = driver.find_element(By.CLASS_NAME, 'navbar-brand')
+elemento = browser.find_element(By.CLASS_NAME, 'navbar-brand')
 ```
 
 
 #### Identificador de TEXTO em LINK
 ```python
 # encontrando pelo texto completo
-link_home = driver.find_element(By.LINK_TEXT, 'Home')
+link_home = browser.find_element(By.LINK_TEXT, 'Home')
 
 # encontrando por uma parte do texto
-link_desafio = driver.find_element(By.PARTIAL_LINK_TEXT, 'Des')
+link_desafio = browser.find_element(By.PARTIAL_LINK_TEXT, 'Des')
 ```
 
 
 #### Identificador de TAG
 ```python
-titulo = driver.find_element(By.TAG_NAME, 'h1')
+titulo = browser.find_element(By.TAG_NAME, 'h1')
 ```
 
 
 #### Identificador de XPATH
 ```python
-titulo = driver.find_element(By.XPATH, '//*[text()="ZONA DE TESTES"]')
+titulo = browser.find_element(By.XPATH, '//*[text()="ZONA DE TESTES"]')
 ```
 
 
 #### Identificador de SELETOR CSS
 ```python
-elemento_h2 = driver.find_element(By.CSS_SELECTOR,'h2')
-elementos_form_chec = driver.find_element(By.CSS_SELECTOR,'input[class="form-check-input"]')
+elemento_h2 = browser.find_element(By.CSS_SELECTOR,'h2')
+elementos_form_chec = browser.find_element(By.CSS_SELECTOR,'input[class="form-check-input"]')
 ```
 
 

@@ -3,7 +3,7 @@
 
 ```python
 # localizando o elemento
-campo_nome = driver.find_element(By.ID, 'dadosusuario')
+campo_nome = browser.find_element(By.ID, 'dadosusuario')
 
 # digitando
 campo_nome.send_keys('Emanuel Santos')
@@ -33,7 +33,7 @@ def digitar_naturalmente(texto, elemento):
 
 
 # encontrando o campo de texto
-campo_de_texto = driver.find_element(
+campo_de_texto = browser.find_element(
     By.XPATH, "//textarea[@placeholder='digite seu texto aqui']")
 
 # chamando a função que irá digitar o texto de forma humanizada

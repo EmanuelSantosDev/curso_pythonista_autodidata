@@ -7,8 +7,8 @@
 
 
 ```python
-driver = iniciar_driver()
+browser = iniciar_driver()
 
 # configuramos logo depois da inicialização do driver
-driver.implicitly_wait(10)
+browser.implicitly_wait(10)
 ```

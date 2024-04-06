@@ -20,7 +20,7 @@ from selenium.webdriver.support import expected_conditions
 
 # o trecho abaixo deve ser incluído na função que inicializa o driver
 wait = WebDriverWait(
-    driver,
+    browser,
     10,
     poll_frequency=1,
     ignored_exceptions=[
@@ -30,7 +30,7 @@ wait = WebDriverWait(
     ]
 )
 
-return driver, wait
+return browser, wait
 ```
 
 

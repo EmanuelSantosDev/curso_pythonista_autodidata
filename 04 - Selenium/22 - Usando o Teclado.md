@@ -6,7 +6,7 @@
 from selenium.webdriver.common.keys import Keys
 
 # localizando e selecionando o elemento
-botao = driver.find_element(By.ID, 'WindowsRadioButton')
+botao = browser.find_element(By.ID, 'WindowsRadioButton')
 botao.click()
 
 # utilizando as teclas

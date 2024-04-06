@@ -99,11 +99,11 @@ source <nome-do-ambiente>/bin/activate
 ```
 
 
-## Instalando as Bibliotecas do Projeto
+## Instalando o Selenium
 
 
 ```
-pip3 install selenium webdriver-manager
+pip3 install selenium
 ```
 
 

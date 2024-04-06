@@ -18,10 +18,10 @@ from selenium.webdriver.common.keys import Keys
 
 
 # encontrando o elemento
-botao = driver.find_element(By.ID, 'botao-direito')
+botao = browser.find_element(By.ID, 'botao-direito')
 
 # realizando o encadeamento
-chain = ActionChains(driver)
+chain = ActionChains(browser)
 chain.context_click(botao).pause(3).send_keys(Keys.DOWN).pause(3).send_keys(
     Keys.DOWN).pause(3).send_keys(Keys.DOWN).pause(3).click().perform()
 ```
@@ -34,10 +34,10 @@ from selenium.webdriver.common.keys import Keys
 
 
 # encontrando o elemento
-radio_windows = driver.find_element(By.ID, 'WindowsRadioButton')
+radio_windows = browser.find_element(By.ID, 'WindowsRadioButton')
 
 # encontrando o elemento
-chain = ActionChains(driver)
+chain = ActionChains(browser)
 chain.click(radio_windows).pause(1).send_keys(Keys.DOWN).pause(1).send_keys(
     Keys.DOWN).pause(1).send_keys(Keys.UP).pause(1).send_keys(Keys.UP).perform()
 ```
