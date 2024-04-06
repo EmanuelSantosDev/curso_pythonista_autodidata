@@ -97,7 +97,7 @@ source <nome-do-ambiente>/bin/activate
 
 
 ```
-pip3 install scrapy selenium webdriver-manager
+pip3 install scrapy selenium
 ```
 
 
