@@ -1,6 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import *
@@ -13,8 +11,9 @@ from time import sleep
 
 
 def iniciar_driver():
-    
+
     chrome_options = Options()
+
     arguments = ['--lang=pt-BR', '--window-size=1200,600', '--incognito']
     for argument in arguments:
         chrome_options.add_argument(argument)
@@ -25,12 +24,11 @@ def iniciar_driver():
         'profile.default_content_setting_values.automatic_downloads': 1,
     })
 
-    driver = webdriver.Chrome(service=ChromeService(
-        ChromeDriverManager().install()), options=chrome_options)
+    browser = webdriver.Chrome(options=chrome_options)
 
     wait = WebDriverWait(
-        driver,
-        10,
+        browser,
+        20,
         poll_frequency=1,
         ignored_exceptions=[
             NoSuchElementException,
@@ -39,14 +37,14 @@ def iniciar_driver():
         ]
     )
 
-    return driver, wait
+    return browser, wait
 
 
-driver, wait = iniciar_driver()
+browser, wait = iniciar_driver()
 
 
 # CÓDIGO AQUI
 
 
 input('digite algo para fechar... ')
-driver.quit()
+browser.quit()

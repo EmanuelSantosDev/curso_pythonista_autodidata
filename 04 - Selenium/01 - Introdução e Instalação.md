@@ -17,22 +17,3 @@ O Selenium é uma ferramenta de automação de testes amplamente utilizada para 
 ```bash
 pip install selenium
 ```
-
-
-# Webdriver Manager
-
-O Webdriver Manager é uma biblioteca Python que simplifica o gerenciamento de drivers de navegador necessários para automatizar testes com o Selenium. Ele facilita o processo de download, instalação e configuração dos drivers correspondentes aos navegadores que você deseja automatizar.
-
-## Principais recursos:
-
-- Gerenciamento Automático de Drivers.
-- Compatibilidade Multiplataforma.
-- Integração com o Selenium.
-- Atualizações Automáticas.
-
-## Instalação:
-
-Para começar a usar o Webdriver Manager com o Selenium, você pode instalar o pacote `webdriver-manager` usando o pip:
-
-```bash
-pip install webdriver-manager
